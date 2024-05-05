@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/imports/PONG-master/clk_pixel.v" \
+"../../../../project_1.srcs/sources_1/imports/PONG-master/debounce.v" \
+"../../../../project_1.srcs/sources_1/imports/PONG-master/graphic.v" \
+"../../../../project_1.srcs/sources_1/imports/PONG-master/timer_1ms.v" \
+"../../../../project_1.srcs/sources_1/imports/PONG-master/vga_sync.v" \
+"../../../../project_1.srcs/sources_1/imports/PONG-master/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
